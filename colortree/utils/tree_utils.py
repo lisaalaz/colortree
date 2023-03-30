@@ -2,8 +2,8 @@ import copy
 import math
 import numpy as np
 
-import colortree.utils.data_utils as data_utils
-import colortree.utils.eval_utils as eval_utils
+import data_utils
+import eval_utils
 
 
 def decision_tree(data, depth):

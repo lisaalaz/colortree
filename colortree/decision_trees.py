@@ -1,7 +1,7 @@
-import colortree.utils.data_utils as data_utils
-import colortree.utils.eval_utils as eval_utils
-import colortree.utils.plot_utils as plot_utils
-import colortree.utils.tree_utils as tree_utils
+import utils.data_utils as data_utils
+import utils.eval_utils as eval_utils
+import utils.plot_utils as plot_utils
+import utils.tree_utils as tree_utils
 
 
 def make_tree(train_data):

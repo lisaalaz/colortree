@@ -1,7 +1,7 @@
 import numpy as np
 
-import colortree.utils.data_utils as data_utils
-import colortree.utils.tree_utils as tree_utils
+import data_utils as data_utils
+import tree_utils as tree_utils
 
 
 def count_classes(i, j, data, pred_class_list):
