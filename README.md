@@ -1,7 +1,7 @@
-# ColorTree
+# colortree
 A simple Python library for building, pruning, evaluating and plotting colorful decision trees.
 
-To install run `pip install git+https://github.com/LisaAlaz/ColorTree@main`
+To install run `pip install git+https://github.com/LisaAlaz/colortree@main`
 
 See example usage below.
 
