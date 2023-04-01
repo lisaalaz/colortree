@@ -17,18 +17,18 @@ train = np.loadtxt('sample_data/train.txt')
 dev = np.loadtxt('sample_data/dev.txt')
 test = np.loadtxt('sample_data/test.txt')
 
-# Build and plot tree from train set
+# Build and plot tree from train set:
 tree, depth = ct.make_tree(train)
 
-# Build and plot optimally pruned tree from train set
+# Build and plot optimally pruned tree from train set:
 tree, depth = ct.make_pruned_tree(train, dev, n_classes=4)
 
-# Inference on one sample
+# Inference on one sample:
 pred = ct.predict_sample(tree, test[0])
 
-# Inference on the test set
+# Inference on the test set:
 test_preds = ct.predict_test_set(tree, test)
 
-# Print evaluation report
+# Print evaluation report:
 ct.eval_report(tree, test, n_classes=4)
 ```
