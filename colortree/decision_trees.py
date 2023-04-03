@@ -1,3 +1,24 @@
+"""Package for building, pruning, evaluating and plotting decision trees.
+
+Typical usage example:
+
+   # Build and plot a decision tree:
+   tree, depth = ct.make_tree(train_data)
+
+   # Build and plot an optimally pruned decision tree:
+   tree, depth = ct.make_pruned_tree(train_data, validation_data, n_classes)
+
+   # Inference on one sample:
+   pred = ct.predict_sample(tree, data_sample)
+
+   # Inference on the test set:
+   test_preds = ct.predict_test_set(tree, test_set)
+
+   # Print evaluation report:
+   ct.eval_report(tree, test_set, n_classes)
+"""
+
+
 import copy
 import math
 import matplotlib.pyplot as plt
